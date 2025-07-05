@@ -6,9 +6,9 @@ A simple Java-based e-commerce system that demonstrates object-oriented programm
 
 - **Product Management**
 **Support for different product types with validation**
-  - Basic products (Mobile scratch cards)
-  - Expirable products (Cheese, Biscuits)
-  - Shippable products (TV)
+  - Basic products 
+  - Expirable products 
+  - Shippable products 
   - Combined expirable and shippable products
 
 - **Shopping Cart**: Add products with quantity validation and stock checking
@@ -20,21 +20,23 @@ A simple Java-based e-commerce system that demonstrates object-oriented programm
 
 ```
 src/
+--- Main.java            #main entry point
 ├── interfaces/          # All interfaces
-│   ├── Expirable.java
-│   └── Shippable.java
+│   ├── Expirable.java   # Expirable products Interface
+│   └── Shippable.java   # Shippable prods Interface
 ├── model/              # Implementation classes
-│   ├── Product.java
-│   ├── ExpirableProduct.java
-│   ├── ShippableProduct.java
-│   ├── ExpirableShippableProduct.java
-│   ├── Customer.java
-│   ├── Cart.java
-│   └── CartItem.java
+│   ├── Product.java   # Prods class
+│   ├── ExpirableProduct.java #ProdSubClass
+│   ├── ShippableProduct.java #ProdSubClass
+│   ├── ExpirableShippableProduct.java #ProdSubClass
+│   ├── Customer.java   #Customer Class
+│   ├── Cart.java       #Cart container Class
+│   └── CartItem.java   #Items to buy class
 └── service/
-    ├── CheckoutService.java
-    └── ShippingService.java
+    ├── CheckoutService.java #Checkout process
+    └── ShippingService.java #Shipping Service
 ```
+
 
 ## How to Run
 
